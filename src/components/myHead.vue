@@ -12,7 +12,7 @@
               <img src="../common/img/name.png" alt="">
             </div>
             <div class="menu" @click="open">
-              <i class="icon iconfont menu-icon">&#xe61f;</i>
+              <i class="icon iconfont menu-icon icon-bars"></i>
             </div>
           </div>
           <div class="head-right">
@@ -41,7 +41,7 @@
           <div class="small-li-span">
             <span>{{Item.title}}</span>
           </div>
-          <div class="small-li-icon" @click="openNav()">
+          <div class="small-li-icon" @click="openNav(Itemindex)">
             <span class="icon iconfont icon-jiantouyou"></span>
           </div>
           <div class="nav-sub" v-show="Itemindex===isopen">
@@ -50,7 +50,10 @@
             </div>
             <div class="nav-sub-details">
               <div class="nav-sub-li" v-for="(item,idx) in Item.child"
-                   :key="idx">{{item.subTitle}}
+                   :key="idx">
+                <router-link :to="{path:Item.go}">
+                  <a :href="Item.go">{{item.subTitle}}</a>
+                </router-link>
               </div>
             </div>
           </div>
@@ -67,12 +70,13 @@
         name: 'myHead',
         data: function () {
             return {
-                isopen:0,
+                isopen: 0,
                 Items: [
                     {title: '首页',},
                     {
                         title: '关于集团',
-                        isopen:false,
+                        isopen: false,
+                        go: '/company',
                         "child": [
                             {subTitle: "公司简介",},
                             {subTitle: "组织架构"},
@@ -82,7 +86,8 @@
                     },
                     {
                         title: '新闻中心',
-                        isopen:false,
+                        isopen: false,
+                        go: '/news',
                         "child": [
                             {subTitle: "新闻要闻",},
                             {subTitle: "基层动态"},
@@ -90,7 +95,7 @@
                     },
                     {
                         title: '经营领域',
-                        isopen:false,
+                        isopen: false,
                         "child": [
                             {subTitle: "沥青产业",},
                             {subTitle: "油料产业"},
@@ -99,7 +104,7 @@
                     },
                     {
                         title: '党建群团',
-                        isopen:false,
+                        isopen: false,
                         "child": [
                             {subTitle: "党建动态",},
                             {subTitle: "群团动态"},
@@ -108,7 +113,7 @@
                     },
                     {
                         title: '企业文化',
-                        isopen:false,
+                        isopen: false,
                         "child": [
                             {subTitle: "企业文化",},
                             {subTitle: "企业精神"},
@@ -117,17 +122,17 @@
                     },
                     {
                         title: '资质荣誉',
-                        isopen:false,
+                        isopen: false,
                         "child": [
                             {subTitle: "交通荣誉",},
                         ]
                     },
-                    {title:'联系我们'},
+                    {title: '联系我们'},
 
                 ]
             }
         },
-        mounted:function(){
+        mounted: function () {
             this.isopen = -1
         },
         methods: {//事件执行方法
@@ -136,19 +141,17 @@
             }, open() {
                 $('.nav-small').fadeIn();
             }, close() {
-                console.log(12);
                 $('.nav-small').fadeToggle();
-                console.log(55);
-            }, openNav(Itemindex) {
+            }, openNav: function (Itemindex) {
                 $('.nav-sub').animate({
-                    "left":'0%'
-                },500)
-                this.isopen=Itemindex
+                    "left": '0%'
+                }, 500);
+                this.isopen = Itemindex
             }, closeNav() {
                 $('.nav-sub').animate({
-                    "left":'200%'
-                },500)
-                this.isopen=!this.isopen
+                    "left": '200%'
+                }, 500);
+                this.isopen = !this.isopen
             }
         }
     }

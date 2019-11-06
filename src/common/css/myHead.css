@@ -153,7 +153,7 @@
   position: absolute;
   top: 0;
   left: 200%;
-  z-index: 3;
+  z-index: 5;
 }
 .nav-sub-title{
   width: 100%;
@@ -212,5 +212,32 @@
   .head-name img{
     width: 100%;
     height: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .head-back .container{
+    width: 970px;
+  }
+  .head-name img{
+    width: 95%;
+  }
+  .head-lianxi {
+    width: 61%;
+    margin-left: 24%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .head-back .container{
+    width: 750px;
+  }
+  .head-logo img{
+    width: 90%;
+  }
+  .head-name img{
+    width: 85%;
+  }
+  .head-lianxi{
+    width: 85%;
+    margin-left: 0%;
   }
 }

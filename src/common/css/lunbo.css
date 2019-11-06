@@ -274,13 +274,13 @@
   height: 100%;
 }
 .three-one-animation {
-  animation: three-one-animation 1.2s linear 0.4s normal;
+  animation: three-one-animation 1.2s linear 0s normal;
   /* Firefox: */
-  -moz-animation: three-one-animation .2s linear 0.4s 1 normal;
+  -moz-animation: three-one-animation .2s linear 0s 1 normal;
   /* Safari and Chrome: */
-  -webkit-animation: three-one-animation 1.2s linear 0.4s 1 normal;
+  -webkit-animation: three-one-animation 1.2s linear 0s 1 normal;
   /* Opera: */
-  -o-animation: three-one-animation 1.2s linear 0.4s 1 normal;
+  -o-animation: three-one-animation 1.2s linear 0s 1 normal;
 }
 
 @keyframes three-one-animation {
@@ -306,13 +306,13 @@
   }
 }
 .three-second-animation {
-  animation: three-second-animation 1.2s linear 0.4s normal;
+  animation: three-second-animation 1.2s linear 0s normal;
   /* Firefox: */
-  -moz-animation: three-second-animation .2s linear 0.4s 1 normal;
+  -moz-animation: three-second-animation .2s linear 0s 1 normal;
   /* Safari and Chrome: */
-  -webkit-animation: three-second-animation 1.2s linear 0.4s 1 normal;
+  -webkit-animation: three-second-animation 1.2s linear 0s 1 normal;
   /* Opera: */
-  -o-animation: three-second-animation 1.2s linear 0.4s 1 normal;
+  -o-animation: three-second-animation 1.2s linear 0s 1 normal;
 }
 
 @keyframes three-second-animation {
@@ -338,13 +338,13 @@
   }
 }
 .three-third-animation {
-  animation: three-third-animation 1.2s linear 0.8s normal;
+  animation: three-third-animation 1.2s linear 0s normal;
   /* Firefox: */
-  -moz-animation: three-third-animation .2s linear 0.8s 1 normal;
+  -moz-animation: three-third-animation .2s linear 0s 1 normal;
   /* Safari and Chrome: */
-  -webkit-animation: three-third-animation 1.2s linear 0.8s 1 normal;
+  -webkit-animation: three-third-animation 1.2s linear 0s 1 normal;
   /* Opera: */
-  -o-animation: three-third-animation 1.2s linear 0.8s 1 normal;
+  -o-animation: three-third-animation 1.2s linear 0s 1 normal;
 }
 
 @keyframes three-third-animation {
@@ -388,5 +388,61 @@
   }
   .carousel-inner{
     height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .item-one{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+  }
+  .one-img1 img{
+    width: 30%;
+    height: 45%;
+    margin-left: 25%;
+    margin-top: 15%;
+  }
+  .one-img2 img{
+    width: 50%;
+    height: 80%;
+    margin-left: 0;
+    margin-top: 15%;
+  }
+  .two-one img{
+    width: 50%;
+    height: 50%;
+    margin-top: 10%;
+    margin-left: -25%;
+  }
+  .two-second img{
+    width: 40%;
+    height: 50%;
+    margin-left: 70%;
+    margin-top: 5%;
+  }
+  .two-third img{
+    width: 50%;
+    height: 50%;
+    margin-left: 75%;
+    margin-top: 5%;
+  }
+  .three-one img{
+    width: 45%;
+    height: 50%;
+    margin-left: -25%;
+    margin-top: 5%;
+  }
+  .three-second img{
+    width: 30%;
+    height: 50%;
+    margin-left: 250%;
+    margin-top: 0;
+  }
+  .three-third  img{
+    width: 45%;
+    height: 50%;
+    margin-top: -15%;
+    margin-left: 20%;
   }
 }

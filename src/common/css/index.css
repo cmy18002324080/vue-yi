@@ -51,15 +51,17 @@ a {
 .scope-details {
   width: 100%;
   height: auto;
+  min-height: 250px;
   display: table;
 }
 .scope-li{
-  width: 16.666%;
+  width: 30%;
   height: auto;
   display: table;
   float: left;
   position: relative;
   overflow: hidden;
+  margin-right: 3%;
 }
 .scope-li-img{
   width: 100%;
@@ -89,5 +91,5 @@ a {
 }
 .scope-li-span:hover{
   background: url("../img/field-img-banner.png");
-  background-size: cover;
+  background-size: 100% 100%;
 }

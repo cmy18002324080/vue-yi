@@ -12,7 +12,7 @@
           <div class="scope-img"><img src="../common/img/title-banner.png" alt=""></div>
           <div class="scope-span"><img src="../common/img/field-title.png" alt=""></div>
         </div>
-        <div class="scope-details">
+        <div class="scope-details container">
           <li class="scope-li">
             <div class="scope-li-img">
               <img src="../common/img/field-img1.png" alt="">
@@ -58,60 +58,6 @@
                 </div>
                 <div class="scope-deta">
                   <img src="../common/img/field-img3-2.png" alt="">
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="scope-li">
-            <div class="scope-li-img">
-              <img src="../common/img/field-img1.png" alt="">
-            </div>
-            <div class="scope-li-span">
-              <div class="scope-li-img">
-                <img src="../common/img/field-img1.png" alt="">
-              </div>
-              <div class="scope-li-span">
-                <div class="scope-icon">
-                  <img src="../common/img/field-img4-1.png" alt="">
-                </div>
-                <div class="scope-deta">
-                  <img src="../common/img/field-img4-2.png" alt="">
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="scope-li">
-            <div class="scope-li-img">
-              <img src="../common/img/field-img5.png" alt="">
-            </div>
-            <div class="scope-li-span">
-              <div class="scope-li-img">
-                <img src="../common/img/field-img5.png" alt="">
-              </div>
-              <div class="scope-li-span">
-                <div class="scope-icon">
-                  <img src="../common/img/field-img5-1.png" alt="">
-                </div>
-                <div class="scope-deta">
-                  <img src="../common/img/field-img5-2.png" alt="">
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="scope-li">
-            <div class="scope-li-img">
-              <img src="../common/img/field-img6.png" alt="">
-            </div>
-            <div class="scope-li-span">
-              <div class="scope-li-img">
-                <img src="../common/img/field-img6.png" alt="">
-              </div>
-              <div class="scope-li-span">
-                <div class="scope-icon">
-                  <img src="../common/img/field-img6-1.png" alt="">
-                </div>
-                <div class="scope-deta">
-                  <img src="../common/img/field-img6-2.png" alt="">
                 </div>
               </div>
             </div>

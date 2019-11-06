@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="picture">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="40000000">
         <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner">
           <div class="item active">
@@ -30,18 +30,12 @@
             </div>
           </div>
           <div class="item">
-            <img src="../common/img/banner-img-2.jpg" alt="Third slide">
+            <img src="../common/img/banner-img-2-1.jpg" alt="Third slide">
             <div class="item-one">
               <div class="three-one three-one-animation"><img src="../common/img/1.png" alt=""></div>
               <div class="three-second three-second-animation"><img src="../common/img/company-1-2.png" alt=""></div>
               <div class="three-third three-third-animation">
-                <div class="orcle-one">
-                  <img src="../common/img/banner-orcle-1.jpg" alt="">
-                </div>
-                <div class="orcle-one"><img src="../common/img/banner-orcle-2.jpg" alt=""></div>
-                <div class="orcle-one"><img src="../common/img/banner-orcle-3.jpg" alt=""></div>
-                <div class="orcle-one"><img src="../common/img/banner-orcle-4.jpg" alt=""></div>
-                <div class="orcle-one"><img src="../common/img/banner-orcle-5.jpg" alt=""></div>
+                <img src="../common/img/banner11_03.png" alt="">
               </div>
             </div>
           </div>
